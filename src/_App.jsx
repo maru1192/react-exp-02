@@ -1,7 +1,6 @@
-// import Chart from "./pages/chart";
+import Chart from "./pages/chart";
 import Home from "./pages/home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import NotFound from "./pages/notfound";
 
 function App() {
   return (
@@ -10,7 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/chart" element={<Chart />} /> */}
+          <Route path="/chart" element={<Chart />} />
         </Routes>
       </Router>
       {/*  */}
