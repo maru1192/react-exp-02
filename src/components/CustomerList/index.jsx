@@ -6,6 +6,7 @@ const CustomerList = () => {
     return (
         <>
             <div className={styles.chartBar}>
+                顧客リストページ
                 <BarChart
                     series={[
                         { data: [35, 44, 24, 34] },
