@@ -40,16 +40,6 @@ function App() {
   return (
     <>
       {/*  */}
-      <h1>データを表示する方法</h1>
-      {data.map((item) => (
-        <div>
-          <p>{item.id}</p>
-          <p>{item.title}</p>
-          <p>{item.userId}</p>
-        </div>
-      ))}
-
-
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -59,6 +49,15 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
+
+      <h1>データを表示する方法</h1>
+      {data.map((item) => (
+        <div>
+          <p>{item.id}</p>
+          <p>{item.title}</p>
+          <p>{item.userId}</p>
+        </div>
+      ))}
       {/*  */}
     </>
   );
